@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hello, {{ user.username }}!</h1>
+    {% for post in posts %}
+    <div><p>Author is {{ post.author }} and the staff is {{ post.title }} 
+        with type of {{ post.type.album }}</p></div>
+    {% endfor %}
+{% endblock %}
